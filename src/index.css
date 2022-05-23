@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+@font-face {
+  font-family: "SF Pro Display-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/SF-Pro-Display-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Display-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Display-Heavy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SF-Pro-Display-Heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Display-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/SF-Pro-Display-Bold.otf") format("opentype");
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  margin: 0;
+  font-family: "SF Pro Display-Bold", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.feature-blockchain {
+  position: relative;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+}
+
+@keyframes animate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.feature-blockchain::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 150%;
+  background: linear-gradient(#ef32d9, #89fffd);
+  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+}
+
+.feature-hype-privileges {
+  transition: all 0.5s;
+}
+
+.feature-hype-privileges:hover {
+  box-shadow: 0 0px 10px 0 rgb(255 247 247 / 65%), 0 6px 30px 0 rgb(185 178 178 / 0%);
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
+.fadeIn {
+  animation: fade-in 1s linear;
+}
+
+.faqItem {
+  transition: all 0.5s;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.h-max {
+  height: max-content;
+}
