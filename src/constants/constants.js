@@ -176,16 +176,16 @@ const Constants = {
                 linkedin: ''
             }
         }
-        // {
-        //     nickname: 'Payout Panic',
-        //     role: 'Community Manager',
-        //     image: '/images/team_3.png',
-        //     contacts: {
-        //         twitter: '',
-        //         instagram: '',
-        //         linkedin: ''
-        //     }
-        // }
+        {
+            nickname: 'Payout Panic',
+            role: 'Community Manager',
+            image: '/images/team_3.png',
+            contacts: {
+                twitter: '',
+                instagram: '',
+                linkedin: ''
+            }
+        }
     ]
 }
 
